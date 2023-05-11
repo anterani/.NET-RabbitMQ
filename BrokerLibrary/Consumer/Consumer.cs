@@ -45,7 +45,7 @@ namespace BrokerLibrary.Consumer
                 } 
                 else
                 {
-                    _logger.LogWarning("Message proceed failed");
+                    _logger.LogError("Message proceed failed");
                 }
             }
             
