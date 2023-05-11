@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mail.Consumer", "Mail.Consumer\Mail.Consumer.csproj", "{10CAED4B-7F90-4A21-8E9C-53F43DA0E94D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mail.Consumer", "src\Mail.Consumer\Mail.Consumer.csproj", "{10CAED4B-7F90-4A21-8E9C-53F43DA0E94D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mail.Contracts", "Mail.Contracts\Mail.Contracts.csproj", "{55F8733F-02B7-4972-94A3-767DC6416BF0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mail.Contracts", "src\Mail.Contracts\Mail.Contracts.csproj", "{55F8733F-02B7-4972-94A3-767DC6416BF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mail.Producer", "Mail.Producer\Mail.Producer.csproj", "{AAB9CFB9-7E8D-4B9D-B9DB-6EE82E2E40E4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mail.Producer", "src\Mail.Producer\Mail.Producer.csproj", "{AAB9CFB9-7E8D-4B9D-B9DB-6EE82E2E40E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrokerLibrary", "BrokerLibrary\BrokerLibrary.csproj", "{D39D45EE-87A6-4F33-A5F7-5FF9868A3C60}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrokerLibrary", "src\BrokerLibrary\BrokerLibrary.csproj", "{D39D45EE-87A6-4F33-A5F7-5FF9868A3C60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
