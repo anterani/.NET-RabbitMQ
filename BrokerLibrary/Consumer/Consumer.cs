@@ -5,7 +5,7 @@ using RabbitMQ.Client.Events;
 
 namespace BrokerLibrary.Consumer
 {
-    public class Consumer<T> : BaseClient, IConsumer<T>
+    public abstract class Consumer<T> : BaseClient, IConsumer<T>
     {
         private readonly ILogger<Consumer<T>> _logger;
 
@@ -45,16 +45,13 @@ namespace BrokerLibrary.Consumer
                 } 
                 else
                 {
-                    _logger.LogWarning("Message proceed failed");
+                    _logger.LogError("Message proceed failed");
                 }
             }
             
             await Task.Yield();
         }
 
-        public virtual Task<bool> ProceedAsync(T message) 
-        {
-            return Task.FromResult(false);
-        }
+        public abstract Task<bool> ProceedAsync(T message);
     }
 }
