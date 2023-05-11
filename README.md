@@ -1,8 +1,7 @@
-# .NET-RabbitMQ
-RabbitMQ mailing system
-
 ## General info
-Mail.Consumer, Mail.Producer are example apps built using BrokerLibrary.
+BrokerLibrary is built on top of RabbitMQ.Client
+
+Mail.Consumer and Mail.Producer are example apps built using BrokerLibrary
 
 ## Requirements
 * .NET 6
