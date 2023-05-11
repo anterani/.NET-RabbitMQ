@@ -22,7 +22,7 @@ namespace BrokerLibrary
             {
                 var factory = new ConnectionFactory
                 {
-                    HostName = options.Value.HostName, 
+                    HostName = options.Value.Host, 
                     Port = options.Value.Port,
                     UserName = options.Value.UserName,
                     Password = options.Value.Password,
