@@ -5,7 +5,7 @@ using RabbitMQ.Client.Events;
 
 namespace BrokerLibrary.Consumer
 {
-    public class Consumer<T> : BaseClient, IConsumer<T>
+    public abstract class Consumer<T> : BaseClient, IConsumer<T>
     {
         private readonly ILogger<Consumer<T>> _logger;
 
@@ -52,9 +52,6 @@ namespace BrokerLibrary.Consumer
             await Task.Yield();
         }
 
-        public virtual Task<bool> ProceedAsync(T message) 
-        {
-            return Task.FromResult(false);
-        }
+        public abstract Task<bool> ProceedAsync(T message);
     }
 }
